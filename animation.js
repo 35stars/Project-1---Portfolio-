@@ -1,6 +1,6 @@
 
 
-const sections = document.querySelectorAll('section:not(#heroCarousel,#quick-links,#skills,#contact)')
+const sections = document.querySelectorAll('section:not(#heroCarousel,#quick-links,#skills,#contact,#video)')
 
 
 function isVisible(el){
