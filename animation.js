@@ -1,0 +1,27 @@
+
+
+const sections = document.querySelectorAll('section:not(#heroCarousel,#quick-links,#skills,#contact)')
+
+
+function isVisible(el){
+
+	let rect = el.getBoundingClientRect()
+
+	return rect.top <= innerHeight
+}
+
+
+for(let section of sections) {
+
+	section.style.position = 'relative'
+	section.style.left = '-100%'
+	section.style.transition = '2s ease-in-out'
+
+	window.addEventListener('scroll',()=>{
+
+		if(isVisible(section)){
+
+			section.style.left = 0
+		}
+	})
+}
