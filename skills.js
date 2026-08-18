@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', function(){
 	const progressBars = document.querySelectorAll('.progress-bar')
 
 	progressBars.forEach(bar=> {
-
-		bar.style.transition = 'width 2s ease-in-out'
 		bar.style.width = 0
 	})
 
@@ -26,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 			progressBars.forEach(bar => {
 
-				let width = bar.parentElement.getAttribute('aria-valuenow')
+				let width = parseInt(bar.innerText)
  
 				bar.style.width = width+'%'
 			})
