@@ -15,7 +15,7 @@ for(let section of sections) {
 
 	section.style.position = 'relative'
 	section.style.left = '-100%'
-	section.style.transition = '2s ease-in-out'
+	section.style.transition = '.5s ease-in-out'
 
 	window.addEventListener('scroll',()=>{
 
